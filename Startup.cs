@@ -29,13 +29,13 @@ namespace CatalogoCursos
              services.AddSwaggerGen(c => {
                  c.SwaggerDoc("V1", new Info{
                     Version = "V1",
-                    Title = "Cursos Online",
-                    Description = "Documentação da Api Cursos Online",
+                    Title = "Cursos",
+                    Description = "Doc",
                     TermsOfService = "none",
                     Contact = new Contact{
-                        Name = "Alander",
-                        Email = "alander@hotmail.com",
-                        Url = "www.alander.com.br"
+                        Name = "J",
+                        Email = "",
+                        Url = ""
                     }
                  });
                  var basePath = AppContext.BaseDirectory;
