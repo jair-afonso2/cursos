@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CatalogoCursos</name>
+    </assembly>
+    <members>
+        <member name="M:CatalogoCursos.Controllers.AreaController.Listar">
+            <summary>
+            Retorna lista de Áreas
+            </summary>
+            <returns>Retorna lista de Áreas</returns>
+            <response code="200">Retorna uma lista de áreas</response>
+            <response code="400">Ocorreu um erro</response>
+        </member>
+        <member name="M:CatalogoCursos.Controllers.AreaController.Listar(System.Int32)">
+            <summary>
+            Busca uma área pelo seu Id
+            </summary>
+            <param name="id">Id da área</param>
+            <returns>Retorna uma área</returns>
+            <response code="200">Retorna uma área</response>
+            <response code="400">Ocorreu um erro</response>
+            <response code="404">Área não encontrada</response>
+        </member>
+        <member name="M:CatalogoCursos.Controllers.AreaController.Cadastro(CatalogoCursos.Models.Area)">
+            <summary>
+            Cadastro de área
+            </summary>
+            <param name="area">Objeto Area</param>
+            <returns></returns>
+            <remarks>
+            Modelo de dados que deve ser enviado para cadastrar a area request:
+            
+                POST /Area
+                {
+                    "nome" : "nome da área"
+                }     
+            </remarks>
+            <response code="200">Retorna a área cadastrada</response>
+            <response code="400">Ocorreu um erro</response>
+        </member>
+    </members>
+</doc>
